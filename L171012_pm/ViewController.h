@@ -10,6 +10,10 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *changeInput;
+
+@property (weak, nonatomic) IBOutlet UIButton *changeButton;
+
 
 @end
 
