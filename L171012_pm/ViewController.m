@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TableViewController_one.h"
 
 @interface ViewController ()
 
@@ -36,6 +37,12 @@
 }
 //跳转uitabView
 - (IBAction)gotoTabView:(id)sender {
+    TableViewController_one *oneContorller = [[TableViewController_one alloc] init];
+//    [self presentViewController:oneContorller animated:NO completion:nil];
+    
+    [self.navigationController pushViewController:oneContorller animated:YES];
+    //[self.navigationController popToViewController:oneContorller animated:YES];
+ 
     
 }
 
